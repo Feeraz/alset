@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Alset</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    
+    <nav id="header">
+        <a href="index.html"><img src="img/LOGO.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <div class="model">
+                    <li><a href="demodrive.html">Model1</a></li>
+                    <li><a href="demodrive.html">Model2</a></li>
+                    <li><a href="demodrive.html">Model3</a></li>
+                    <li><a href="demodrive.html">Model4</a></li>
+                </div>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+            <div class="list"></div>
+        </div>
+        
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>      
+    </nav>
+
+    <div id="pageDemo">
+        <div class="demoTitle">
+            <h2>Schedule a Demo Drive</h2>
+            <p>Demo Drive a Alset at a store near you. Drivers must have a valid U.S. driver's license and be 18 years of age or older.</p>
+        </div>
+        
+    </div>
+
+    <div id="demoCol">
+        <div class="option">
+            <button onclick="changeImage('img/item/car-001.jpg')">Model 1</button>
+            <button onclick="changeImage('img/item/car-002.jpg')">Model 2</button>
+            <button onclick="changeImage('img/item/car-003.jpg')">Model 3</button>
+            <button onclick="changeImage('img/item/car-004.jpg')">Model 4</button>
+        </div>
+        <div class="display">
+            <img id="bannerImage" src="img/item/car-001.jpg"/>
+        </div>
+    </div>
+
+    <div id="demoContact">
+        <h2>Contact Information</h2>
+        
+    </div>
+    <div class="contactDetails">
+        <input type="text" placeholder="First Name"/>
+        <input type="text" placeholder="Last Name"/>
+        <input type="text" placeholder="Phone Number"/>
+        <input type="text" placeholder="Email Address"/>
+        <button> Submit and Continue</button>
+    </div>
+    <div class="col">
+        <a href="#">Alset © 2023</a>
+        <a href="#">Privacy & Legal</a>
+        <a href="#">Vehicle Recalls</a>
+        <a href="#">Contact</a>
+    </div>
+        
+        
+
+    
+
+    <script>
+        function changeImage(fileName){
+            let img = document.querySelector('#bannerImage');
+            img.setAttribute("src", fileName);
+        }
+    </script>
+
+    <script src="tesla.js"></script>
+</body>
+</html>
